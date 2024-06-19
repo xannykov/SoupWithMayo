@@ -1,0 +1,63 @@
+body {
+  font-family: "Nozhik";
+  background-color: rgb(21, 21, 21);
+  padding: 20px;
+}
+
+.image-list {
+  display: grid;
+  margin-top: 4em;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  background-color: rgb(21, 21, 21);
+  border-radius: 1em;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image-item .image-number {
+  color: white;
+  font-size: 5em;
+  margin-bottom: 5px;
+}
+
+.image-item img {
+  border-radius: 1em;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image-item .album-name {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+@media (min-width: 1150px) {
+  .image-item {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media (min-width: 600px) {
+  .image-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@font-face {
+  font-family: "Nozhik"; 
+  src: url("../fonts/Nozhik-Bold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 

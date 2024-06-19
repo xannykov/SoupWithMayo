@@ -1,0 +1,153 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(21, 21, 21);
+}
+
+.card-container {
+  margin-top: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Тень */
+}
+
+.container-the-item {
+  display: flex;
+  justify-content: center;
+  grid-gap: 4em;
+}
+
+.card-info {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 38%;
+  border-radius: 10px;
+}
+
+.card-img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.card-info:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.album-info {
+  display: flex;
+  align-items: center;
+  font-family: "Nozhik";
+  margin-top: 20px;
+  font-size: 2.5em;
+  flex-direction: column;
+}
+
+.album-info .album-name{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+.logo-container {
+  margin-top: 0.5em;
+  display: flex;
+}
+
+.logo-place {
+  height: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: .5s;
+}
+
+.logo-place:hover{
+  transform: scale(1.2);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Nozhik"; 
+  src: url("../fonts/Nozhik-Bold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+@media (max-width: 920px) {
+  .album-info{
+   font-size: 2em;
+  }
+}
+@media (max-width: 700px) {
+  .card-container{
+    margin-top: 35em;
+  }
+  .container-the-item {
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 2em;
+  }
+  .card-info {
+    width: 80%;
+  }
+  .logo-container{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container{
+    margin-top: 25em;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-container{
+    margin-top: 15em;
+  }
+  .album-info .album-name{
+    font-size: 1.5em;
+  }
+  .logo-container{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-container{
+    margin-top: 5em;
+  }
+  .album-info .album-name{
+    font-size: 1.3em;
+  }
+  .logo-container{
+    font-size: 0.8em;
+  }
+}
