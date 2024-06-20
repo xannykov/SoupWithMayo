@@ -7,7 +7,7 @@ body {
 }
 
 .card-container {
-  margin-top: 8em;
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@ body {
 
 .card-info {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 38%;
+  width: 32%;
   border-radius: 10px;
 }
 
